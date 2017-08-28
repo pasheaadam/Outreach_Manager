@@ -1,0 +1,182 @@
+/* =Media queries
+-------------------------------------------------------------- */
+
+/* Does the same thing as <meta name="viewport" content="width=device-width">*/
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+/* Maximum width of 1199 pixels. */
+@media screen and (max-width:1199px) {
+	.navbar-nav {
+		font-size: 15px;
+	}
+
+	/* Remove fixed footer style */
+	.footer-fixed {
+		position: relative;
+		z-index: inherit;
+	}
+	.support-section {
+		margin-bottom: 0px;
+	}
+}
+
+/* Maximum width of 991 pixels. */
+@media screen and (max-width:991px) {
+
+	/* navigation style */
+	.site-haeader .site-logo {
+		margin: 15px 0px;
+	}
+	.site-navigation .head-col {
+		display: none;
+	}
+	.site-navigation, .site-navigation .navbar {
+		float: none;
+		margin: 10px 0px;
+	}
+	.navbar-nav {
+		float: none;
+	}
+	.navbar-nav > li {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
+
+	/* Newsletter style */
+	.newsletter-dialog .newletter-title, .newsletter-dialog .newletter-title h3, .newsletter-dialog .newleter-content {
+		float: none;
+		text-align: center;
+	}
+	.newsletter-dialog .newleter-content {
+		margin-top: 20px;
+	}
+
+	/* footer */
+	.footer-section .footer-widget {
+		border-right: 0 solid #dbdbdb;
+		font-size: 14px;
+		min-height: 250px;
+		padding: 0 50px;
+	}
+}
+
+/* Maximum width of 767 pixels. */
+@media screen and (max-width:767px) {
+
+	/* Navigation style */
+	.site-haeader .site-logo {
+		float: left;
+		margin: 0px;
+	}
+	.navbar-toggle {
+		margin-top: 10px;
+		margin-right: 0px;
+	}
+	.navbar-nav > li {
+		display: block;
+		text-align: right;
+		border-bottom: 1px solid #CCC;
+	}
+	.site-navigation .dropdown-menu {
+		top: 0px;
+		margin-bottom: 15px;
+		width: 100%;
+	}
+	.dropdown-menu {
+		float: right;
+		left: 0;
+		text-align: right;
+	}
+
+	.navbar .dropdown-menu {
+		position: relative;
+	}
+	.nav .open > a, 
+	.nav .open > a:focus, 
+	.nav .open > a:hover {
+		background-color: transparent;
+		border-color: transparent;
+	}
+
+	/* Home banner slider */
+	#slider-carousal .caption {
+		display: none;
+	}
+
+	/* Causes listing style */
+	.causes-listing .causes-list {
+		margin: 0 auto;
+	}
+
+	/* Recent blog style */
+	.recent-blog-section .post-content {
+		padding: 0 15px;
+	}
+	.recent-blog-section .post-content .post-cnt-panel {
+		margin-top: -20px;
+		padding: 20px 20px 35px;
+	}
+
+	/* Footer Copyright style */
+	.footer-section .footer-widget {
+		min-height: auto;
+		padding: 5px 15px;
+	}
+	.copyright-section {
+		text-align: center;
+	}
+	.copyright-section .footer-social {
+		float: none;
+		margin-top: 24px;
+	}
+
+	/* Category carousal */
+	.owl-theme .owl-nav {
+		display: none;
+	}
+	.owl-theme .owl-dots .owl-dot span {
+		background: #FFF;
+	}
+	/* Support section  */
+	.support-section .support-col {
+		margin-bottom: 35px;
+	}
+
+	/* Newsletter style */
+	.newsletter-dialog .newleter-content {
+		width: 100%;
+	}
+	#subscribe_email-normal {
+		padding: 12px 100px 8px 30px;
+	}
+	#subscribe-normal .btn {
+	padding: 0px 10px;
+	}
+
+	/* Campaign listing page */
+	.campaign-details-content .campaign-goal-count {
+	float: right;
+	position: relative;
+	top: 32px;
+	}
+	.campaign-details-content h2.campaign-title {
+	margin-bottom: 0px;
+	}
+	.head-title-section .start-campain-btn {
+	float: none;
+	margin-top: 15px;
+	}
+
+	.event-post .event-list .event-thumb {
+		padding: 15px;
+	}
+	.event-post .event-list .event-info {
+		padding: 20px 15px 15px 15px;
+	}
+}
